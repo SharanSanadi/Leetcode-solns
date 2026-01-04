@@ -1,4 +1,6 @@
-
+// LeetCode 19: Remove Nth Node From End of List
+// Approach: Two pointers with dummy node
+// Time: O(n), Space: O(1)
 class Solution {
 
    
