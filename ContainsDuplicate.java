@@ -1,0 +1,16 @@
+import java.util.*;
+
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (int num : nums) {
+            if (!map.containsKey(num)) {
+                map.put(num, 1);   // ✅ num is the key
+            } else {
+                return true;
+            }
+        }
+        return false;
+    }
+}
